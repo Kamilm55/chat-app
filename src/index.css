@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.logo{
+  width: 300px;
+  border: 1px solid black;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.chat-room{
+ min-height:  100vh;
+  background-color: #4c4b4b;
+}
+.inputDiv{
+  width: 87%;
+  position: relative;
+  
+}
+.inputDiv > input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.inputDiv > button {
+  top: 0;
+  right: 0;
+  position: absolute; 
+  height: 100%;
+  width: 60px;
+}
+
+.inputDiv > input:focus{
+  outline: 0;
+}
+
+.avatar-div{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.otherMessage{
+  background-color: white;
+ 
+}
+
+.oneMessage:has( > .otherMessage){
+  justify-content: flex-end !important;
+  flex-direction: row-reverse;
+}
